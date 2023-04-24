@@ -11,11 +11,11 @@ function App() {
   }, [])
 
 
-  console.log(gifts)
+  // console.log(gifts)
 
   return (
     <>
-      {gifts.length && gifts.map(gift => (
+      {gifts.length>0 && gifts.map(gift => (
         <div key={gift.id}>
           <img src={gift.image} alt={gift.text} />
           <p>{gift.text}</p>
